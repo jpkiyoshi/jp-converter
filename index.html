@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0329b6bd1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JP Converter</title>
+  </head>
+  <body>
+    <form class="form" autocomplete="off">
+      <div class="form-group">
+        <input type="text" id="preco" required />
+        <i class="fas fa-dollar-sign fa-2x"></i>
+      </div>
+      <div class="form-group">
+        <input type="text" id="qtd" required />
+        <i class="fas fa-balance-scale-right fa-2x"></i>
+      </div>
+      <div class="form-group">
+        <input type="text" id="result" disabled />
+        <i class="fas fa-tag fa-2x"></i>
+      </div>
+      <button class="btn" type="submit">Calcular</button>
+      <button type="reset" class="btn clean">Limpar</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
