@@ -12,12 +12,7 @@ form.addEventListener('submit', e => {
   const preco = e.target[0].value.replace(',', '.');
   const qtd = e.target[1].value.replace(',', '.');
 
-  console.log(preco);
-  console.log(qtd);
-
   const total = fullPrice(Number(preco), Number(qtd)).toFixed(2);
-
-  console.log(isNaN(total));
 
   result.value = isNaN(total) ? 'Valor inválido!' : `R$${total}`;
 });
